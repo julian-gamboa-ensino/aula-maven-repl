@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novembro 14</title>
+
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: #263238;
+}
+
+svg {
+  width: 0;
+  height: 0;
+}
+
+.container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform-style: preserve-3d;
+  perspective: 5000px;
+  transform: rotateX(0.1turn) rotateY(0turn);
+  -webkit-animation: flyout 8s infinite ease-in-out;
+          animation: flyout 8s infinite ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.gear {
+  position: absolute;
+  transform-style: preserve-3d;
+  -webkit-animation: r 9s infinite linear;
+          animation: r 9s infinite linear;
+}
+.gear:nth-child(1) {
+  top: 0em;
+  left: 0em;
+  animation-direction: reverse;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  color: #e65100;
+}
+.gear:nth-child(1) .teeth {
+  transform: rotateZ(0deg);
+}
+.gear:nth-child(1) .tooth {
+  height: 3.6em;
+}
+.gear:nth-child(1) .tooth:nth-child(1) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(0deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(2) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(20deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:nth-child(3) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(40deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(4) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(60deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:nth-child(5) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(80deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(6) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(100deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:nth-child(7) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(120deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(8) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(140deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:nth-child(9) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(160deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(10) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(180deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:nth-child(11) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(200deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(12) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(220deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:nth-child(13) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(240deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(14) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(260deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:nth-child(15) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(280deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(16) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(300deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:nth-child(17) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(320deg) translateZ(3.40277em);
+}
+.gear:nth-child(1) .tooth:nth-child(18) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(340deg) translateZ(4.60277em);
+}
+.gear:nth-child(1) .tooth:before, .gear:nth-child(1) .tooth:after {
+  height: 3.6em;
+}
+.gear:nth-child(1) .face {
+  transform: rotateZ(10deg);
+  z-index: 1;
+}
+.gear:nth-child(1) .face:before, .gear:nth-child(1) .face:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 9.20554em;
+  height: 9.20554em;
+  background-color: #ff8c4d;
+  -webkit-clip-path: url(#clip_0);
+          clip-path: url(#clip_0);
+}
+.gear:nth-child(1) .face:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%) translateZ(1.8em);
+}
+.gear:nth-child(1) .face:after {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%) rotateZ(20deg) rotateY(180deg) translateZ(1.8em);
+}
+.gear:nth-child(2) {
+  top: 4.64011em;
+  left: 8.03691em;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: 5.33333s;
+          animation-duration: 5.33333s;
+  color: #3f51b5;
+}
+.gear:nth-child(2) .teeth {
+  transform: rotateZ(135deg);
+}
+.gear:nth-child(2) .tooth {
+  height: 4.8em;
+}
+.gear:nth-child(2) .tooth:nth-child(1) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(0deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(2) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(15deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(3) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(30deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(4) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(45deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(5) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(60deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(6) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(75deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(7) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(90deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(8) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(105deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(9) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(120deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(10) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(135deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(11) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(150deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(12) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(165deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(13) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(180deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(14) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(195deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(15) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(210deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(16) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(225deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(17) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(240deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(18) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(255deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(19) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(270deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(20) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(285deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(21) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(300deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(22) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(315deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:nth-child(23) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(330deg) translateZ(4.55745em);
+}
+.gear:nth-child(2) .tooth:nth-child(24) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(345deg) translateZ(5.75745em);
+}
+.gear:nth-child(2) .tooth:before, .gear:nth-child(2) .tooth:after {
+  height: 4.8em;
+}
+.gear:nth-child(2) .face {
+  transform: rotateZ(142.5deg);
+  z-index: 1;
+}
+.gear:nth-child(2) .face:before, .gear:nth-child(2) .face:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 11.5149em;
+  height: 11.5149em;
+  background-color: #8591d5;
+  -webkit-clip-path: url(#clip_1);
+          clip-path: url(#clip_1);
+}
+.gear:nth-child(2) .face:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%) translateZ(2.4em);
+}
+.gear:nth-child(2) .face:after {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%) rotateZ(15deg) rotateY(180deg) translateZ(2.4em);
+}
+.gear:nth-child(3) {
+  top: 12.8327em;
+  left: -0.15568em;
+  animation-direction: reverse;
+  -webkit-animation-duration: 6.66667s;
+          animation-duration: 6.66667s;
+  color: #7cb342;
+}
+.gear:nth-child(3) .teeth {
+  transform: rotateZ(225deg);
+}
+.gear:nth-child(3) .tooth {
+  height: 2.4em;
+}
+.gear:nth-child(3) .tooth:nth-child(1) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(0deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(2) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(12deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(3) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(24deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(4) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(36deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(5) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(48deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(6) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(60deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(7) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(72deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(8) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(84deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(9) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(96deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(10) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(108deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(11) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(120deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(12) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(132deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(13) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(144deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(14) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(156deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(15) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(168deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(16) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(180deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(17) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(192deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(18) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(204deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(19) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(216deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(20) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(228deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(21) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(240deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(22) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(252deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(23) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(264deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(24) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(276deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(25) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(288deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(26) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(300deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(27) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(312deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(28) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(324deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:nth-child(29) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(336deg) translateZ(5.70862em);
+}
+.gear:nth-child(3) .tooth:nth-child(30) {
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) rotateY(348deg) translateZ(6.90862em);
+}
+.gear:nth-child(3) .tooth:before, .gear:nth-child(3) .tooth:after {
+  height: 2.4em;
+}
+.gear:nth-child(3) .face {
+  transform: rotateZ(231deg);
+  z-index: 1;
+}
+.gear:nth-child(3) .face:before, .gear:nth-child(3) .face:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 13.81724em;
+  height: 13.81724em;
+  background-color: #aed388;
+  -webkit-clip-path: url(#clip_2);
+          clip-path: url(#clip_2);
+}
+.gear:nth-child(3) .face:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%) translateZ(1.2em);
+}
+.gear:nth-child(3) .face:after {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%) rotateZ(12deg) rotateY(180deg) translateZ(1.2em);
+}
+
+.teeth,
+.face {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.tooth {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 0.90532em;
+  background-color: currentColor;
+}
+.tooth:nth-child(odd) {
+  width: 1.2em;
+}
+.tooth:nth-child(even):before, .tooth:nth-child(even):after {
+  content: "";
+  position: absolute;
+  width: 1.32991em;
+  top: 0;
+  left: 0;
+  background-color: currentColor;
+}
+.tooth:nth-child(even):before {
+  transform-origin: right;
+  transform: translateX(-100%) rotateY(-83deg);
+}
+.tooth:nth-child(even):after {
+  transform-origin: left;
+  transform: translateX(0.90532em) rotateY(83deg);
+}
+
+@-webkit-keyframes r {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes r {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes flyout {
+  0% {
+    transform: rotateX(0.1turn) rotateY(0turn);
+  }
+  100% {
+    transform: rotateX(0.1turn) rotateY(0.5turn);
+  }
+}
+@keyframes flyout {
+  0% {
+    transform: rotateX(0.1turn) rotateY(0turn);
+  }
+  100% {
+    transform: rotateX(0.1turn) rotateY(0.5turn);
+  }
+}
+
+</style>
+</head>
+<body>
+    
+<!-- gears data-->
+<svg viewBox="0 0 1 1">
+    <defs>
+      <clipPath id="clip_0" clipPathUnits="objectBoundingBox">
+        <polygon points="0.37289707407285055,0.15078758106854345 0.5,0.12837590590059755 0.5378153523555718,0.0046874616294752675 0.6345333691997914,0.009756238108940569 0.6271029259271494,0.1507875810685435 0.7388753631480806,0.21531942778602858 0.8473490031235339,0.14487582232419619 0.9181811557592652,0.21092787324062112 0.8218359061484612,0.3141879529502988 0.8659782890752299,0.43546815328251487 0.9943541949758274,0.45123073251903234 1.0061573319731223,0.5473595691618452 0.8659782890752299,0.564531846717485 0.8218359061484612,0.6858120470497011 0.9100455648640431,0.7804053249782471 0.8572968672446113,0.8616311963292599 0.7388753631480806,0.7846805722139714 0.6271029259271494,0.8492124189314565 0.633872057803538,0.9783751495220825 0.541253227419985,1.0066915676511503 0.5,0.8716240940994024 0.37289707407285055,0.8492124189314565 0.2950583270745626,0.9525079250569559 0.20590674400699474,0.9146653232195547 0.26112463685191967,0.7846805722139716 0.1781640938515388,0.6858120470497013 0.05213908278038523,0.7149072133922777 0.008169763555597356,0.6286125655617997 0.1340217109247701,0.5645318467174852 0.13402171092477005,0.43546815328251504 0.01877893907292827,0.3767490281537215 0.04056561682074976,0.28238055910822885 0.1781640938515387,0.3141879529502989 0.26112463685191944,0.21531942778602858 0.2105874779496099,0.09626134242401177 0.2879359240198829,0.037975107618599915"></polygon>
+      </clipPath>
+      <clipPath id="clip_1" clipPathUnits="objectBoundingBox">
+        <polygon points="0.3973319726223479,0.11683770551372957 0.5,0.10332120328709055 0.5260638392029956,0.002539814937532414 0.6040095772870745,0.0032200370886452884 0.6026680273776521,0.11683770551372957 0.6983393983564546,0.1564660849039773 0.7713020394011807,0.08221876196609267 0.8384649176231648,0.12178072067121276 0.7804942671086182,0.2195057328913818 0.8435339150960226,0.30166060164354525 0.9438450772369028,0.2738418543387131 0.9822288566158616,0.3416849547118101 0.8831622944862705,0.3973319726223478 0.8966787967129095,0.5 0.9974601850624676,0.5260638392029956 0.9967799629113547,0.6040095772870745 0.8831622944862705,0.6026680273776521 0.8435339150960227,0.6983393983564546 0.9177812380339073,0.7713020394011807 0.8782192793287872,0.8384649176231648 0.7804942671086184,0.7804942671086181 0.6983393983564549,0.8435339150960226 0.726158145661287,0.9438450772369028 0.6583150452881901,0.9822288566158617 0.6026680273776521,0.8831622944862705 0.5,0.8966787967129095 0.4739361607970044,0.9974601850624676 0.3959904227129255,0.9967799629113547 0.3973319726223479,0.8831622944862705 0.30166060164354536,0.8435339150960227 0.22869796059881936,0.9177812380339073 0.16153508237683528,0.8782192793287872 0.21950573289138192,0.7804942671086184 0.1564660849039774,0.6983393983564549 0.056154922763097206,0.7261581456612871 0.01777114338413833,0.6583150452881902 0.11683770551372963,0.6026680273776522 0.10332120328709055,0.5 0.0025398149375324003,0.47393616079700446 0.0032200370886452125,0.39599042271292556 0.11683770551372952,0.39733197262234815 0.15646608490397718,0.3016606016435455 0.0822187619660925,0.22869796059881958 0.12178072067121251,0.16153508237683545 0.2195057328913816,0.21950573289138192 0.30166060164354513,0.1564660849039774 0.273841854338713,0.05615492276309719 0.34168495471180993,0.017771143384138308"></polygon>
+      </clipPath>
+      <clipPath id="clip_2" clipPathUnits="objectBoundingBox">
+        <polygon points="0.4140019610895478,0.09541103678578677 0.5,0.08637227867175584 0.5195754475710413,0.0015816997894756574 0.5847274371458788,0.00044446758124430793 0.5859980389104522,0.09541103678578677 0.6682375508561426,0.12213227402552301 0.7206080474850208,0.052634277668481 0.7805899056282655,0.07809506587974532 0.7431242745360828,0.1653681441008656 0.8073853007790903,0.22322903202079913 0.8834955118276466,0.18104045312860384 0.927935830348257,0.22869686017363683 0.8582121143797299,0.29318613933587795 0.8933833396895425,0.37218200476498764 0.980073118227921,0.3645976318993066 1.0012877623260643,0.4262094320551557 0.9113618253922253,0.4567641299246574 0.9113618253922253,0.5432358700753426 0.9936417211592262,0.5715671102065164 0.9879624861413424,0.6364810635006027 0.8933833396895425,0.6278179952350122 0.8582121143797299,0.706813860664122 0.9218551859078522,0.7661619849922343 0.8902640631027636,0.8231538791752582 0.8073853007790903,0.7767709679792009 0.7431242745360828,0.8346318558991344 0.7771260565789604,0.9147350345670712 0.7250854381160078,0.9539504533796833 0.6682375508561428,0.8778677259744769 0.5859980389104523,0.9045889632142132 0.5844793144563792,0.9915966289157557 0.5209874960419838,1.0062548701843599 0.5000000000000001,0.9136277213282442 0.4140019610895479,0.9045889632142132 0.37722533139381187,0.9834567001097365 0.3132606252368848,0.9710232207530497 0.33176244914385744,0.877867725974477 0.2568757254639173,0.8346318558991344 0.19120020390610315,0.8917227157885059 0.1378226888022898,0.8543473773419132 0.1926146992209098,0.776770967979201 0.14178788562027017,0.7068138606641222 0.058569366521106475,0.7322563152182902 0.02500849975135743,0.6764016532434977 0.10661666031045758,0.6278179952350126 0.08863817460777468,0.5432358700753429 0.002265895936018808,0.5326306877644481 -0.005675343744273259,0.4679544807405716 0.08863817460777468,0.4567641299246574 0.10661666031045747,0.37218200476498775 0.03202517371597423,0.3273629179556406 0.05107667360975929,0.2650482696420034 0.14178788562027,0.293186139335878 0.19261469922090962,0.2232290320207993 0.14270155037826723,0.15194566799095716 0.18545161243705088,0.1027673471917948 0.2568757254639169,0.16536814410086587 0.3317624491438571,0.12213227402552312 0.3151580749346703,0.036710174004977725 0.3742148250563675,0.009171559157484077"></polygon>
+      </clipPath>
+    </defs>
+  </svg>
+  <div class="container">
+    <div class="gear">
+      <div class="face">
+        <div class="teeth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+      </div>
+    </div>
+    <div class="gear">
+      <div class="face">
+        <div class="teeth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+      </div>
+    </div>
+    <div class="gear">
+      <div class="face">
+        <div class="teeth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
